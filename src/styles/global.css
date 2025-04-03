@@ -1,8 +1,8 @@
 :root {
 	/* color  */
-	--primary-0: #190230;
+	--primary-0: #0c0711;
 	--primary-10: #2b1560;
-	--primary-20: #442288;
+	--primary-20: #3e3042;
 	--primary-30: #5529ae;
 	--primary-40: #6632cf;
 	--primary-50: #7644e3;
@@ -27,7 +27,7 @@
 	--secondary-99: #fcf3f8;
 	--secondary-100: #ffffff;
 
-	/* colores de las propiedades */
+	/* property colors */
 	--surface: #4F4360;
 	--surface-variant: #e0d8e7;
 	--surface-dim: #998da9;
@@ -41,7 +41,7 @@
 	--on-surface-secondary: var(--secondary-95);
 	--on-secondary: var(--secondary-95);
 
-	/* texto  */
+	/* text  */
 	--text-small: 1.2rem;
 	--text-medium: 1.4rem;
 	--text-large: 1.6rem;
@@ -56,15 +56,15 @@
 	--site-bg: var(--primary-0);
 	--hero-bg: linear-gradient(
 		-54deg,
-		var(--primary-0) -23%,
-		var(--primary-20),
-		var(--primary-0) 51%
+		var(--primary-0) -3%,
+		var(--primary-0),
+		var(--primary-20) 99%
 	);
 
 	--text-gradient: radial-gradient(
 		circle farthest-corner at center center,
-		#58f9ff 0%,
-		#df44e7 100%
+		#fdfdfd 0%,
+		#7e0ee7 100%
 	);
 }
 *{
@@ -88,7 +88,7 @@ p{
 	font-size: var(--text-general);
 }
 
-.color__gradiente {
+.color__gradient {
 	background: var(--text-gradient);
 	-webkit-background-clip: text;
 	background-clip: text;

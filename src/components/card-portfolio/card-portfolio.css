@@ -1,6 +1,6 @@
 .card__portfolio {
-	width: 332px;
-	height: 246px;
+	width: 498px;
+	height: 369px;
 	overflow: hidden;
 	border-radius: 22px;
 	background: #000;
@@ -10,12 +10,12 @@
 .card__portfolio img {
 	object-fit: cover;
 	object-position: center 0;
-	height: 160px;
-	width: 332px;
+	height: 270px;
+	width: 498px;
 	background: #000;
 }
 
-.card__portfolio .descripcion__container {
+.card__portfolio .description__container {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -24,18 +24,18 @@
 	top: 0;
 	transition: 0.35s;
 	background: #231724;
-	transform: translateY(63%);
+	transform: translateY(70%);
 	padding-top: 15px;
 	transition-property: transform, padding-top;
 	color: var(--on-primary);
 }
 
-.card__portfolio:hover .descripcion__container {
-	transform: translateY(0%);
+.card__portfolio:hover .description__container {
+	transform: translateY(52%);
 	padding-top: 55px;
 }
 
-.card__portfolio .descripcion__container .card__title {
+.card__portfolio .description__container .card__title {
 	position: absolute;
 	display: block;
 	width: max-content;
@@ -52,44 +52,44 @@
 	transition-property: background, transform;
 }
 
-.card__portfolio:hover .descripcion__container .card__title {
+.card__portfolio:hover .description__container .card__title {
 	transform: translateY(11%);
 	backdrop-filter: none;
 	background: #0000;
 }
 
-.card__portfolio .descripcion {
+.card__portfolio .description {
 	padding: 0 22px;
 	display: flex;
 	width: 100%;
 	height: 100%;
 	flex-direction: column;
-	gap: 10px;
+	gap: 2px;
 }
 
-.card__portfolio .descripcion p {
+.card__portfolio .description p {
 	font-size: var(--text-medium);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	height: 20px;
+	height: 25px;
 	transition: 0.35s height;
 }
 
-.card__portfolio:hover .descripcion p {
+.card__portfolio:hover .description p {
 	overflow: auto;
 	white-space: wrap;
-	height: 90px;
+	height: 50px;
 	max-height: 90px;
 }
 
-.card__portfolio .descripcion p::-webkit-scrollbar {
+.card__portfolio .description p::-webkit-scrollbar {
 	width: 4px;
 	background: var(--surface);
 	border-radius: 4px;
 }
 
-.card__portfolio .descripcion p::-webkit-scrollbar-thumb {
+.card__portfolio .description p::-webkit-scrollbar-thumb {
 	width: 2px;
 	background: var(--primary);
 	border-radius: 4px;
@@ -98,7 +98,7 @@
 .card__portfolio .skills {
 	display: flex;
 	gap: 10px;
-	font-size: 3rem; /* Estamos usando rem para los textos */
+	font-size: 3rem; /* Estamos usando rem para los texts */
 }
 
 .card__portfolio .buttons {
@@ -109,11 +109,11 @@
 	display: flex;
 	justify-content: center;
 	gap: 22px;
-	font-size: var(--text-button);
+	font-size: var(--text-large);
 }
 
 .card__portfolio .buttons a {
-	position: relative;
+	position: center;
 }
 
 .card__portfolio .buttons a:hover {
@@ -125,7 +125,6 @@
 	bottom: 0;
 	left: 0;
 	content: '';
-	height: 2px;
 	width: 100%;
 	transform-origin: 0 0;
 	transform: scale(0);
@@ -140,4 +139,151 @@
 	display: flex;
 	align-items: center;
 	gap: 4px;
+}
+@media screen and (max-width: 768px) {
+
+	.card__portfolio {
+		width: 90%;
+		height: 246px;
+		overflow: hidden;
+		border-radius: 22px;
+		background: #000;
+		position: relative;
+	}
+	
+	.card__portfolio img {
+		object-fit: cover;
+		object-position: center 0;
+		height: 173px;
+		width: stretch;
+		background: #000;
+	}
+	
+	.card__portfolio .description__container {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		transition: 0.35s;
+		background: #231724;
+		transform: translateY(65%);
+		padding-top: 15px;
+		transition-property: transform, padding-top;
+		color: var(--on-primary);
+	}
+	
+	.card__portfolio:hover .description__container {
+		transform: translateY(0%)!important;
+		padding-top: 55px;
+	}
+	
+	.card__portfolio .description__container .card__title {
+		position: absolute;
+		display: block;
+		width: max-content;
+		top: 0;
+		padding: 4px 22px;
+		font-size: var(--text-title);
+		font-weight: 500;
+		background: #0008;
+		backdrop-filter: blur(10px);
+		z-index: 2;
+		transform: translateY(-100%);
+		border-radius: 0 8px 0 0;
+		transition-duration: 0.35s;
+		transition-property: background, transform;
+	}
+	
+	.card__portfolio:hover .description__container .card__title {
+		transform: translateY(11%);
+		backdrop-filter: none;
+		background: #0000;
+	}
+	
+	.card__portfolio .description {
+		padding: 0 22px;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		gap: 10px;
+	}
+	
+	.card__portfolio .description p {
+		font-size: var(--text-medium);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 20px;
+		transition: 0.35s height;
+	}
+	
+	.card__portfolio:hover .description p {
+		overflow: auto;
+		white-space: wrap;
+		height: 90px;
+		max-height: 90px;
+	}
+	
+	.card__portfolio .description p::-webkit-scrollbar {
+		width: 4px;
+		background: var(--surface);
+		border-radius: 4px;
+	}
+	
+	.card__portfolio .description p::-webkit-scrollbar-thumb {
+		width: 2px;
+		background: var(--primary);
+		border-radius: 4px;
+	}
+	
+	.card__portfolio .skills {
+		display: flex;
+		gap: 10px;
+		font-size: 3rem; /* Estamos usando rem para los textos */
+	}
+	
+	.card__portfolio .buttons {
+		padding: 14px;
+		width: 100%;
+		height: 47px;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		gap: 22px;
+		font-size: var(--text-button);
+	}
+	
+	.card__portfolio .buttons a {
+		position: relative;
+	}
+	
+	.card__portfolio .buttons a:hover {
+		color: var(--primary-80);
+	}
+	
+	.card__portfolio .buttons a::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: '';
+		height: 2px;
+		width: 100%;
+		transform-origin: 0 0;
+		transform: scale(0);
+		background: var(--primary);
+		transition: 0.35s transform;
+	}
+	.card__portfolio .buttons a:hover::after {
+		transform: scale(1);
+	}
+	
+	.card__portfolio .buttons a span {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+	
 }

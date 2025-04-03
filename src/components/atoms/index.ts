@@ -1,2 +1,2 @@
-export * from './Boton.astro';
+export * from './Button.astro';
 export * from './Title.astro';

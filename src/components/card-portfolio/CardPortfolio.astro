@@ -2,30 +2,28 @@
 import './card-portfolio.css';
 const {
 	title,
-	descripcion,
+	description,
 	imgSrc,
 	skills,
-	repoURL,
 	demoURL,
 	averageBrightness,
 } = Astro.props;
 ---
 
 <div class="card__portfolio">
+	<a href={demoURL} target="_blank">
 	<img
 		src={imgSrc}
 		alt={title}
-		crossorigin="anonymous"
-		height={130}
-		width={332}
+		crossorigin=""
 		loading="lazy"
 		average-brightness={averageBrightness}
-	/>
+	/></a>
 
-	<div class="descripcion__container">
-		<h2 class="card__title">{title}</h2>
-		<div class="descripcion">
-			<p>{descripcion}</p>
+	<div class="description__container">
+		<a href={demoURL} target="_blank"><h2 class="card__title">{title}</h2></a>
+		<div class="description">
+			<p>{description}</p>
 
 			<div class="skills">
 				{
@@ -35,17 +33,9 @@ const {
 				}
 			</div>
 
-			<div class="buttons">
-				<a href={repoURL}>
-					<span>
-						Github
-						{(<iconify-icon icon="quill:link-out" />)}
-					</span>
-				</a>
-
-				<a href={demoURL}>
-					<span>
-						Demo
+				<a href={demoURL} target="_blank">
+					<span style="font-size: medium;">
+						Check It Out
 						{(<iconify-icon icon="quill:link-out" />)}
 					</span>
 				</a>

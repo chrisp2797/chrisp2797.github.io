@@ -1,81 +1,41 @@
 /**
- * @SofiDev Esto es JSDOC, si consideras que puede ser complicado solo borralo, es un comentario, no afectará en nada
- * @typedef PortafolioData
- * @property {string} imgSrc Url de la imagen
- * @property {string} title Titulo de la tarjeta
- * @property {string[]} skills Array con tus habilidades ej: ['React', 'CSS', 'JavaScript']
- * @property {string} descripcion La descripcion de la tarjeta
- * @property {string} demoURL Url de una pagina de demostración
- * @property {string} repoURL Url del repositorio, ej: https://github.com/usuario/repo
- * @property {string} anim La animación que se ejecutará cuando se cargue la tarjeta, ej: fade-up, fade-right, fade-left, fade-down
- * @property {number} averageBrightness Cuanto brillo tendrá el color de fondo de la tarjeta, ej: 0.1
+ * @chrisp2797 
+ * @typedef PortfolioData
+ * @property {string} imgSrc URL of the image
+ * @property {string} title Title of the project
+ * @property {string[]} skills Array of skills used: ['React', 'CSS', 'JavaScript']
+ * @property {string} description Description of the project
+ * @property {string} demoURL URL of the demo
+ * @property {string} repoURL URL of the repository, e.g., https://github.com/user/repo
+ * @property {string} anim The animation that will be executed when the card loads, e.g., fade-up, fade-right, fade-left, fade-down
+ * @property {number} averageBrightness The brightness level of the card's background color, e.g., 0.1
  */
 
 /**
- * @SofiDev Esto es JSDOC, si consideras que puede ser complicado solo borralo, es un comentario, no afectará en nada
- * @type {PortafolioData[]}
+ * @chrisp2797 
+ * @type {PortfolioData[]}
  */
-export const portafolioData = [
+export const PortfolioData = [
 	{
-		imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
-		title: 'Restaurant',
-		skills: ['React', 'StyledComponents'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-right',
+		imgSrc: '/img/port1_tt.png',
+		title: 'Ticket Travel',
+		skills: ['WordPress'],
+		description:
+			'This website is designed for Ticket Travel, a travel office based in Kos.',
+		demoURL: 'https://tickettravelkos.com',
+		anim: 'fade-up',
+		averageBrightness: 0.9,
 	},
 	{
-		imgSrc: 'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/299377097/original/7eb7dcebe244fcf5ad75d92b0969fc116946bd57/create-professional-amd-responsive-wordpress-website.jpg',
-		title: 'E-commerce',
-		skills: ['JavaScript', 'Bootstrap'],
-		descripcion:
-			' Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
+		imgSrc: '/img/port2_ac.png',
+		title: 'Art Cafe Espresso Bar',
+		skills: ['WordPress'],
+		description:
+			'This website is for the Art Cafe Espresso Bar in Kos.It is under construction',
+		demoURL: 'https://artcafekos.gr',
 		repoURL: '',
 		anim: 'fade-up',
-		averageBrightness: 0.1,
-	},
-	{
-		imgSrc: 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://www.corse.mx/cdn/shop/files/tienda_lenceria-lenceria-hot_sale-ofertas-mexico-lenceria_seyx-encaje-corse_mx-corse_lenceria_1200_x_560_px_13.png?v=1712270274&width=1500',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
-		title: 'Restaurant',
-		skills: ['React', 'StyledComponents'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-right',
+		averageBrightness: 0.9,
 	}
 ];
 
@@ -88,17 +48,18 @@ const skillIcons = {
 	StyledComponents: 'skill-icons:styledcomponents',
 	Bootstrap: 'skill-icons:bootstrap',
 	Tailwind: 'skill-icons:tailwindcss-dark',
+	WordPress: 'skill-icons:wordpress'
 };
 
 /**
- * @description Se mapea el portafolioData para que tenga los iconos de las habilidades
- * 	Puedes ver Array.map en https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ * @description Maps the PortflioData to include skill icons
+ * 	You can check Array.map at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
  */
-export const getPortafolioData = portafolioData.map((item) => {
+export const getPortfolioData = PortfolioData.map((item) => {
 	return {
-		// Se coloca todo el contenido previo del item
+		// All the previous content of the item is kept
 		...item,
-		// Se cambian las skills por los iconos correspondientes
+		// The skills are replaced with the corresponding icons
 		skills: item.skills.map((skill) => skillIcons[skill]),
 	};
 });
