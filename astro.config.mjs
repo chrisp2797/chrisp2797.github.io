@@ -11,7 +11,7 @@ export default defineConfig({
   },
   integrations: [react(), tailwind(), sitemap()],
   site: 'https://chrisp2797.github.io',
-  base:'/my_website/',
-  trailingSlash: 'false',
+  base:'/my_website',
+  trailingSlash: 'always',
   output: 'static',
 });
