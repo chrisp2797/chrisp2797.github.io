@@ -10,5 +10,6 @@ export default defineConfig({
     enabled: false
   },
   integrations: [react(), tailwind(), sitemap()],
-  site: 'chrisp2797.github.io'
+  site: 'https://chrisp2797.github.io',
+  base:'my_website'
 });
