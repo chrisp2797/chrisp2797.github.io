@@ -31,7 +31,7 @@ export const PortfolioData = [
 		title: 'Art Cafe Espresso Bar',
 		skills: ['WordPress'],
 		description:
-			'This website is for the Art Cafe Espresso Bar in Kos.It is under construction',
+			'This website is for the Art Cafe Espresso Bar in Kos.',
 		demoURL: 'https://artcafekos.gr',
 		repoURL: '',
 		anim: 'fade-up',
