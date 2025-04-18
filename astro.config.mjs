@@ -10,5 +10,5 @@ export default defineConfig({
     enabled: false
   },
   integrations: [react(), tailwind(), sitemap()],
-  site: 'https://chrisp2797.github.io',
+  site: 'designsbychris.gr',
 });
