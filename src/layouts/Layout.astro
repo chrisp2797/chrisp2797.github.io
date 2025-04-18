@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import Header from '../components/header/Header.astro';
 import { mainMenu } from '../components/data/menuData.js';
+import { SEO } from 'astro-seo';
 ---
 
 <!doctype html>
@@ -25,6 +26,40 @@ import { mainMenu } from '../components/data/menuData.js';
 		/>
 		<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 		<title>{title}</title>
+		<SEO
+		title="Christos K. Panorios"
+		description="Web developer"
+		openGraph={{
+		  basic: {
+			title: "Web developer",
+			type: "A type.",
+			image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+		  }
+		}}
+		
+		extend={{
+		  // extending the default link tags
+		  link: [{ rel: "icon", href: "/favicon.ico" }],
+		  // extending the default meta tags
+		  meta: [
+			{
+			  name: "Web Designs",
+			  content: "Web Designs",
+			},{
+			  name: "Websites Kos",
+			  content: "Websites Kos",
+			},{
+			  name: "Websites",
+			  content: "Websites",
+			},
+			{
+			  name: "Web Design",
+			  content: "Web Design",
+			},
+			
+		  ],
+		}}
+	  />
 	</head>
 	<body class="flex flex-col">
 
